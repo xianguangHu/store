@@ -1,0 +1,9 @@
+server:
+  port: ${port:8501}
+
+eureka:
+  instance:
+    hostname: ${hostname:eureka}
+  client:
+    serviceUrl:
+          defaultZone: ${eureka.serviceUrl:http://127.0.0.1:8501/eureka/}

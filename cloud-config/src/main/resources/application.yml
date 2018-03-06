@@ -1,0 +1,15 @@
+spring:
+  application:
+    admin: cloud-config
+  cloud:
+    config:
+      server:
+      label: master
+        git:
+          username: huxianguang
+          password: hxg125678
+          search-paths: /config/*
+
+
+server:
+  port: 8502
