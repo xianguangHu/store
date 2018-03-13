@@ -1,0 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8501/eureka/
+server:
+  port: 8505
+spring:
+  application:
+    name: cloud-web-admin

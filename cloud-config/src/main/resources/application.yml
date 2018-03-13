@@ -6,7 +6,8 @@ spring:
       server:
       label: master
         git:
-          username: huxianguang
+          url: https://gitee.com/Xg_Hu/xbin-store-cloud.git
+          username: Xg_Hu
           password: hxg125678
           search-paths: /config/*
 
