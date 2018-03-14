@@ -12,6 +12,8 @@
         <module>cloud-config</module>
         <module>cloud-eureka</module>
         <module>cloud-admin-service</module>
+        <module>cloud-admin-api</module>
+        <module>cloud-zuul</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8501/eureka/
+server:
+  port: 8502
+spring:
+  application:
+    name: cloud-zuul
+zuul:
+  routes:
+    api-a:
+          path: /api-a/**
+          serviceId: cloud-web-admin
+    api-b:
+          path: /api-b/**
+          serviceId: cloud-admin-service
