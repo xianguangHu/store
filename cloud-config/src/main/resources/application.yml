@@ -1,16 +1,19 @@
 spring:
   application:
-    admin: cloud-config
+    name: cloud-config
   cloud:
     config:
       server:
-      label: master
         git:
-          url: https://gitee.com/Xg_Hu/xbin-store-cloud.git
-          username: Xg_Hu
+          uri: https://github.com/xianguangHu/store
+          username: 15789762@qq.com
           password: hxg125678
-          search-paths: /config/*
-
+          search-paths: /*
 
 server:
   port: 8502
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8501/eureka/
+
